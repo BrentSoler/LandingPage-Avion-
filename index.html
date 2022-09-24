@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>NIKE</title>
+
+		<link rel="stylesheet" href="./styles/styles.css" />
+		<script src=""></script>
+	</head>
+	<body>
+		<video autoplay muted class="bg" loop>
+			<source src="assets/bg.mp4" type="video/mp4" />
+		</video>
+
+		<nav class="navbar">
+			<div class="navlogo">
+				<img src="assets/logo.png" alt="" />
+			</div>
+			<div class="navitem">
+				<li><a href="https://www.nike.com/ph/" target="_blank">Shop now</a></li>
+				<!-- <li>Sign up</li>
+				<li>Login</li> -->
+				<li><a href="#newsletter">Newsletter</a></li>
+			</div>
+		</nav>
+
+		<div class="hero">
+			<div class="quotes">
+				<h1>JUST DO IT</h1>
+				<p>Be legendary</p>
+			</div>
+			<a class="proceed" href="#hot">
+				<div>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="upDown"
+					>
+						<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+					</svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-6 h-6"
+					>
+						<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+					</svg>
+				</div>
+
+				Proceed
+			</a>
+		</div>
+
+		<div id="main">
+			<div class="slant"></div>
+
+			<div class="col" id="hot">
+				<div class="details">
+					<h1>Hot Now</h1>
+					<div class="headers">
+						<h2 class="price">$260</h2>
+						<h1 class="name">Jordan 4</h1>
+						<h3 class="colorway">Fire Red</h3>
+					</div>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat non id eos rem sed
+						nostrum eum accusamus impedit in a suscipit dolore quae quaerat tempore quam eius
+						praesentium, eligendi commodi.
+					</p>
+					<button class="next" onClick="carousellDown()"><</button>
+					<button><a href="https://www.nike.com/ph/" target="_blank">Shop now</a></button>
+					<button class="next" onClick="carousellUp()">></button>
+				</div>
+				<div class="img-container">
+					<img src="assets/wafle.png" alt="" class="animate-in" />
+					<img src="assets/j3.png" alt="" class="animate-out" />
+					<img src="assets/freaks.png" alt="" class="animate-out" />
+				</div>
+			</div>
+
+			<div class="col">
+				<iframe class="vid" src="https://www.youtube.com/embed/ODadUkT9dHA"> </iframe>
+				<div class="details" id="new">
+					<h1>New Release!</h1>
+					<div class="headers">
+						<h2 class="price">$260</h2>
+						<h1 class="name">Cosmic Unity 2</h1>
+					</div>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat non id eos rem sed
+						nostrum eum accusamus impedit
+					</p>
+					<button><a href="https://www.nike.com/ph/" target="_blank">Shop now</a></button>
+				</div>
+			</div>
+
+			<div class="col" id="newsletter">
+				<form class="form" action="/success.html" autocomplete="off">
+					<div>
+						<h1>Signup for Newsletter</h1>
+						<p>Recive the upcoming and latest drops of the week</p>
+					</div>
+					<div>
+						<label for="">Email:</label>
+						<input type="email" id="email" name="email" onchange='setHelper("")' />
+						<p class="helper"></p>
+					</div>
+					<button type="submit" onclick="submitHandler(event)">Submit</button>
+				</form>
+			</div>
+		</div>
+		<script src="apps/index.js"></script>
+	</body>
+</html>
